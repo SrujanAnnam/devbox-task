@@ -477,7 +477,7 @@ button#button-send:hover {
 }
 .speakerslider .slick-arrow.slick-next {
     right: -7px;
-    background: url(https://img.icons8.com/ios/50/000000/long-arrow-right.png) 0 0 / 50% no-repeat;
+    background: url(../img/right.png) 0 0 / 50% no-repeat;
     background-color: white;
     padding: 14px;
     background-position: center;
