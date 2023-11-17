@@ -443,55 +443,102 @@ button#button-send:hover {
 .external-links:hover {
   color: #111111;
 }
-.filter-slide{
+.slick-slider {
+  min-width: 0;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+.speakerslider {
   position: relative;
 }
-.filter-slide .btn {
+
+.speakerslider .slick-arrow {
   position: absolute;
-  top: calc(50% - 30px);
-  color: #0c5449;
-  background-color: #fff;
-  border-radius: 50%;
-    width: 50px;
-    height: 50px;
+  top: 50%;
+  margin: -20px 0px 0px 0px;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+}
+.speakerslider .slick-arrow.slick-prev {
+  left: 0;
+  background: url("https://img.icons8.com/ios/50/000000/long-arrow-left.png") 0
+    0 / 100% no-repeat;
+    display: none!important;
+}
+.speakerslider .slick-arrow.slick-next {
+    right: -7px;
+    background: url(https://img.icons8.com/ios/50/000000/long-arrow-right.png) 0 0 / 60% no-repeat;
+    background-color: white;
+    padding: 14px;
+    background-position: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
     box-shadow: 0 0 4px 0px #dddddd;
 }
-
-.filter-slide .btn::before {
-  content: "🡒";
-  color: #1673e6;
-  font-size: 24px;
+.speakerslider .slick-arrow.slick-disabled {
+  opacity: 0.2;
 }
 
-.filter-slide .btn:last-of-type {
-  transform: rotate(0deg);
-  right: -26px;
+.speakerslider .slider-item {
+    padding-right: 15px;
+}
+.speakerslider .slider-item img {
+  max-width: 100%;
 }
 
-.filter-events{
+
+.eventsslider {
   position: relative;
 }
-.filter-events .btn {
+
+.eventsslider .slick-arrow {
   position: absolute;
-  top: calc(50% - 60px);
-  color: #0c5449;
-  background-color: #fff;
-  border-radius: 50%;
-    width: 50px;
-    height: 50px;
+  top: calc(50% - 45px);
+  margin: -20px 0px 0px 0px;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+}
+.eventsslider .slick-arrow.slick-prev {
+  left: 0;
+  background: url("https://img.icons8.com/ios/50/000000/long-arrow-left.png") 0
+    0 / 100% no-repeat;
+    display: none!important;
+}
+.eventsslider .slick-arrow.slick-next {
+    left: -20px;
+    background: url("https://img.icons8.com/ios/50/000000/long-arrow-left.png") 0
+    0 / 60% no-repeat;
+    background-color: white;
+    padding: 14px;
+    background-position: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
     box-shadow: 0 0 4px 0px #dddddd;
 }
+.eventsslider .slick-arrow.slick-disabled {
+  opacity: 0.2;
+}
 
-.filter-events .btn::before {
+.eventsslider .slider-item {
+    padding-right: 15px;
+}
+.eventsslider .slider-item img {
+  max-width: 100%;
+}
 
-  content: "🡒";
-  color: #1673e6;
-  font-size: 24px;
-}
-.filter-events .btn:first-of-type {
-display: none;
-}
-.filter-events .btn:last-of-type {
-  transform: rotate(180deg);
-  left: -26px;
-}
